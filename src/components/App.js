@@ -9,7 +9,7 @@ import friends from "../data/friends.json"
 
 export const App = () => {
   return (
-    <div >
+    <div>
       <Profile profiles={user}
       username={user.username}
       tag={user.tag}
@@ -21,7 +21,7 @@ export const App = () => {
         items={data}
 
       />
-      <FriendListItem items={friends} />
+      <FriendListItem items={friends} />;
     </div>
   );
 };
