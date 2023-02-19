@@ -1,0 +1,15 @@
+.isOnline{
+background-color: rgb(18, 230, 67);
+width: 10px;
+height: 10px;
+border-radius: 50%;
+}
+
+.isOffline {
+background-color: rgb(207, 11, 11);
+width: 10px;
+height: 10px;
+border-radius: 50%;
+}
+
+
