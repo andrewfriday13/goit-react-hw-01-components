@@ -1,39 +1,17 @@
+import css from "../statistic/statistic.module.css"
 
 export const Statistics = ({ items}) => {
   return (
-    <div>
-   <h2 className="title">Upload stats</h2>
-      <ul>
+    <div className={css.stats}>
+   <h2 className={css.title}>Upload stats</h2>
+      <ul className={css.stats_list}>
         {items.map(item => (
-          <li key={item.id}>
+          <li className={css.stats_item} key={item.id}>
             <span>{item.label} </span>
             <span>{item.percentage }%</span>
           </li>
         ))}
       </ul>
     </div>
-//     <section className="statistics">
-//   <h2 className="title">Upload stats</h2>
-            
-//   <ul className="stat-list">
-//     <li className="item">
-//       <span className="label">.docx</span>
-//       <span className="percentage">4%</span>
-//     </li>
-//     <li className="item">
-//       <span className="label">.mp3</span>
-//       <span className="percentage">14%</span>
-//     </li>
-//     <li className="item">
-//       <span className="label">.pdf</span>
-//       <span className="percentage">41%</span>
-//     </li>
-//     <li className="item">
-//       <span className="label">.mp4</span>
-//       <span className="percentage">12%</span>
-//     </li>
-//   </ul>
-// </section>
-
   )
 }
